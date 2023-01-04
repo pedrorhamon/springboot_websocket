@@ -23,6 +23,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
 			
 			@Override
 			public void run() {
+				if(!session.isOpen()) return;;
 				try {
 					session.sendMessage(new TextMessage("Olá" + UUID.randomUUID()));					
 				}catch(IOException e) {
