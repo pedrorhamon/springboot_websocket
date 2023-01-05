@@ -5,4 +5,4 @@ spring:
   cache:
     type: redis
     redis:
-      time-to-live: 600000
+      time-to-live: 10000
