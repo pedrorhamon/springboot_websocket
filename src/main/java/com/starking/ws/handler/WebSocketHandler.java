@@ -36,8 +36,8 @@ public class WebSocketHandler extends TextWebSocketHandler {
         Optional<String> ticket = ticketOf(session);
         if(ticket.isEmpty() || ticket.get().isBlank()) {
         	LOGGER.warning("session: " + session.getId() + "without ticket");
-        	session.close();
-        	return
+        	close(session);
+        	return;
         }
     }
     
