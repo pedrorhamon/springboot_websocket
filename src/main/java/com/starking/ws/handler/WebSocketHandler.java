@@ -39,6 +39,13 @@ public class WebSocketHandler extends TextWebSocketHandler {
         	close(session);
         	return;
         }
+        
+        Optional<String> userId = this.ticketService.getUserIdByTicket(ticket.get());
+        if(userId.isEmpty()) {
+        	LOGGER.warning("session: " + session.getId() + "without ticket");
+        	close(session);
+        	return;
+        }
     }
     
     private void close(WebSocketSession session) {
