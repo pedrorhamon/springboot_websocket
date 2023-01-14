@@ -46,6 +46,10 @@ public class WebSocketHandler extends TextWebSocketHandler {
         	close(session);
         	return;
         }
+        
+        sessions.put(userId.get(), session);
+        
+        LOGGER.info("session: " + session.getId() + " was bind to user" + userId.get());
     }
     
     private void close(WebSocketSession session) {
