@@ -14,7 +14,7 @@ import com.google.common.net.HttpHeaders;
 import com.starking.ws.services.TicketService;
 
 @RestController
-@RequestMapping("v1/ticket")
+@RequestMapping("/v1/ticket/")
 @CrossOrigin
 public class TicketController {
 
