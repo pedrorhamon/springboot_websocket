@@ -16,7 +16,7 @@ spring:
 
 app:
   auth:
-    jwks-url: https://{dev-0e6uf10ic5zyb6u6.us.auth0.com}/.well-known/jwks.json
+    jwks-url: https://{DOMAIN}/.well-known/jwks.json
 
 # Substituir {DOMAIN} pelo seu domain na plataforma Auth0.
 # Você encontrará em Auth0 > Applications > Aplicação XYZ > Domain

@@ -1,12 +1,12 @@
-package com.starking.ws.handler;
+package com.cursochat.ws.handler;
 
-import com.starking.ws.data.User;
-import com.starking.ws.dtos.ChatMessage;
-import com.starking.ws.events.Event;
-import com.starking.ws.events.EventType;
-import com.starking.ws.pubsub.Publisher;
-import com.starking.ws.services.TicketService;
-import com.starking.ws.services.UserService;
+import com.cursochat.ws.data.User;
+import com.cursochat.ws.dtos.ChatMessage;
+import com.cursochat.ws.events.Event;
+import com.cursochat.ws.events.EventType;
+import com.cursochat.ws.pubsub.Publisher;
+import com.cursochat.ws.services.TicketService;
+import com.cursochat.ws.services.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;

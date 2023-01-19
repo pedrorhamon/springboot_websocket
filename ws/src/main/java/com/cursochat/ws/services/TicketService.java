@@ -1,17 +1,16 @@
-package com.starking.ws.services;
+package com.cursochat.ws.services;
+
+import com.cursochat.ws.data.User;
+import com.cursochat.ws.data.UserRepository;
+import com.cursochat.ws.providers.TokenProvider;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
-
-import com.starking.ws.data.User;
-import com.starking.ws.data.UserRepository;
-import com.starking.ws.providers.TokenProvider;
 
 @Service
 public class TicketService {

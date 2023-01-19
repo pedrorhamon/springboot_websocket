@@ -1,4 +1,4 @@
-package com.starking.ws.providers;
+package com.cursochat.ws.providers;
 
 import com.auth0.jwk.Jwk;
 import com.auth0.jwk.JwkException;

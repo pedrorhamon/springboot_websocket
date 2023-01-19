@@ -1,4 +1,4 @@
-package com.starking.ws.providers;
+package com.cursochat.ws.providers;
 
 import java.security.PublicKey;
 

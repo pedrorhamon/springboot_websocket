@@ -1,4 +1,4 @@
-package com.starking.ws.config;
+package com.cursochat.ws.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +16,6 @@ public class WebSocketConfig implements WebSocketConfigurer {
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        registry.addHandler(this.webSocketHandler, "/chat").setAllowedOrigins("*");
+        registry.addHandler(webSocketHandler, "/chat").setAllowedOrigins("*");
     }
 }
