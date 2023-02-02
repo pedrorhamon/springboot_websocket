@@ -30,8 +30,7 @@ public class Publisher {
         ChatMessage chatMessage = new ChatMessage(from, to, text);
         String chatMessageSerialized = new ObjectMapper().writeValueAsString(chatMessage);
         redisTemplate
-                .convertAndSend(RedisConfig.CHAT_MESSAGES_CHANNEL, chatMessageSerialized)
-                .subscribe();
+                .convertAndSend(RedisConfig.CHAT_MESSAGES_CHANNEL, chatMessageSerialized).subscribe();
         LOGGER.info("chat message was published");
     }
 }
